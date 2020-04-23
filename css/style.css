@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Josefin Sans';
+
+}
+
+
+.logo{
+    width: 200px;
+
+}
+.logo-header{
+    display: none;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    
+}
+
+.flexbox{
+
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.box-content{
+flex:1;
+background-image: url('../images/bg-pattern-desktop.svg');
+background-size: cover;
+background-repeat: no-repeat;
+padding: 5% 10%;
+
+
+
+}
+
+.txt-box{
+    width: 80%;
+    padding-top: 20%;
+    
+
+}
+
+.txt-box h2{
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 200;
+
+
+}
+
+.txt-box p{
+    text-align: left;
+    width:75%;
+    line-height: 25px;
+    color: hsl(0, 36%, 70%);
+
+
+}
+
+
+
+
+
+small{
+    display: none;
+    margin: 10px 15px;
+    color: hsl(0, 93%, 68%);
+}
+
+.success small{
+    display: none;
+}
+.error-icon{
+    display: none;
+    color: hsl(0, 93%, 68%);
+    position: absolute;
+    margin-top: 45px;
+    top: 0;
+    right: 30%;
+}
+
+
+
+
+
+
+
+
+.error input[type=email]{
+    border: 2px solid hsl(0, 93%, 68%);
+}
+
+.error .error-icon{
+    display: block;
+}
+
+.error small {
+    display: block;
+}
+
+
+
+
+/* form.success input[type=email]{
+    border: 2px solid hsl(127, 71%, 46%);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * */
+input:focus{
+    outline: none;
+}
+button:focus{
+    outline: none;
+
+}
+.txt-box button:hover{
+  background-image: linear-gradient(135deg, hsl(0, 50%, 86%),hsl(0, 74%, 86%));
+    transition: 0.4s;
+cursor: pointer;
+}
+
+.txt-box ::placeholder{
+    color:hsl(0, 36%, 70%);
+
+}
+form{
+    width: 75%;
+    position: relative;
+
+
+}
+form input[type="email"]{
+    position: relative;
+    margin-top: 30px;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 40px;
+    width: 100%;
+    color:hsl(0, 36%, 70%);
+    padding: 20px;
+    
+
+}
+
+
+
+.txt-box button{
+    margin-top: 30px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    border: none;
+    border-radius: 40px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    width: 25%;
+    padding: 17px;
+}
+
+
+
+
+
+.box-img{
+background-image: url('../images/hero-desktop.jpg');  
+background-size: cover;
+background-repeat: no-repeat;
+width: 40%;
+height: 100%;
+}
+
+/* Media queries */
+
+
+@media screen and (max-width: 768px){
+
+
+.flexbox{
+flex-direction: column-reverse;
+flex: 1;
+
+}
+
+.box-img{
+background-image: url('../images/hero-mobile.jpg');  
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+height: 400px;
+margin: auto;
+
+
+}
+
+
+/* Css trick */
+.logo-header{
+    display: block;
+    padding: 8%;
+}
+.logo{
+    display: none;
+}
+
+.txt-box{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.txt-box p{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+form{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+
+}
+/* end */
