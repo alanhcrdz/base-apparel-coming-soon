@@ -15,6 +15,7 @@ font-family: 'Josefin Sans';
 }
 .logo-header{
     display: none;
+
 }
 
 html,body{
@@ -48,6 +49,8 @@ height: 100%;
 
 .txt-box{
     width: 100%;
+    margin-top: 30%;
+
 }
 
 .txt-box h2{
@@ -64,6 +67,7 @@ height: 100%;
     line-height: 25px;
     color: hsl(0, 36%, 70%);
     margin-top: 30px;
+    font-size: 18px;
 
 
 
